@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+	padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: black;
+    height:200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%; 
+}
+
+hr{
+    border-top: 2px white solid;
+}
