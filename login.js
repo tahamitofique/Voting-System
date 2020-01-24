@@ -10,6 +10,7 @@ signin_form.addEventListener('submit', (e) => {
 
     auth.signInWithEmailAndPassword(id, pswd).then(cred => {
         console.log(cred);
+        localStorage.setItem("id",id);
         signin_form.reset();
         $('#loginModal').modal('toggle');
         window.location= 'voting.html'; //is seredirect ho raha hai

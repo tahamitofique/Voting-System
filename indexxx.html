@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="face-api.min.js"></script>
+    <link rel="stylesheet" href="csss/style.css">
+</head>
+<body>
+    
+    <div id="container">
+        <video autoplay="true" width="800px" height="500px" id="videoElement">
+
+        </video>
+    </div>
+    
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+  <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+          apiKey: "AIzaSyDrFB0B7xGoY50JQkSV0OL9-CSmz--bF3c",
+          authDomain: "electronic-voting-d682c.firebaseapp.com",
+          databaseURL: "https://electronic-voting-d682c.firebaseio.com",
+          projectId: "electronic-voting-d682c",
+          storageBucket: "electronic-voting-d682c.appspot.com",
+          messagingSenderId: "840653810179",
+          appId: "1:840653810179:web:99751a8310d6fa9028bc36",
+          measurementId: "G-3XVPDKBJYT"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
+
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+  </script>
+   
+ 
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+   crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+   crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+   crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>

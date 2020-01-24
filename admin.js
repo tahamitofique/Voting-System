@@ -6,10 +6,10 @@ const ggdd = document.querySelector('#guidesss');
 
 //loading positions for result
 db.collection('positions').onSnapshot(snapshot => {
-    setuprespos(snapshot.docs)
+    setuprrespos(snapshot.docs)
 })
 //display details
-const setuprespos = (data) => {
+const setuprrespos = (data) => {
 let html = '';
 data.forEach(doc => {
     const candidate = doc.data();

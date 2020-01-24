@@ -2,7 +2,6 @@ const signoutt = document.querySelector('#signout');
 const guides = document.querySelector('#guides');
 const positions = document.querySelector('#position');
 const candidates = document.querySelector('#candidate');
-const votebtn = document.querySelector('#voteSubmit');
 const voteform = document.querySelector('#voteform');
 const resposition = document.querySelector('#respos');
 
@@ -97,16 +96,5 @@ const setupcan = (data) => {
     candidates.innerHTML = html;
 }
 
-votebtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const pos = document.querySelector('#position').value;
-    const cann = document.querySelector('#candidate').value;
-    
-    db.collection("votes").add({
-        name: cann,
-        position: pos
-    })
-    alert("Successfully Submitted ")
-})
 
 
